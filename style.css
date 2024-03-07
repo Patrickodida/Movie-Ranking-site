@@ -150,6 +150,10 @@ h2 {
     text-align: center;
 }
 
+.feat__btn {
+    padding-bottom: 2em;
+}
+
 .hero__btn {
     padding-top: 1.325em;
 }
@@ -174,7 +178,7 @@ h2 {
 #hero {
     padding: 8em 0 0;
     margin-top: 3em;
-    margin-bottom: 6em;
+    margin-bottom: 5.5em;
 }
 
 .hero__cover {
@@ -213,6 +217,24 @@ h2 {
 
 
 /* ==== MAIN SECTION ==== */
+.movie__header {
+    text-align: center;
+    color: var(--clr-White);
+}
+
+.movie__header h2 {
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-bolder);
+    margin-bottom: 0;
+}
+
+.movie__header p{
+    font-size: var(--fs-small);
+    font-weight: var(--fw-bold);
+    padding-top: 1em;
+    margin: 0 0;
+}
+
 .movies__cover {
     padding: 3em 0;
     background-color: transparent;
@@ -255,7 +277,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.325em;
-    margin-bottom: 2em;
+    margin-bottom: 0;
 }
 
 
@@ -264,13 +286,19 @@ h2 {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
+
+    padding-top: 2em;
 }
 
 .fav__container {
     display: flex;
     justify-content: center;
     gap: 1.325em;
-    margin: 2em 0;
+    margin: 0;
+}
+
+.fav__movies h2 {
+    padding-top: 3em;
 }
 
 .fav__movie {
