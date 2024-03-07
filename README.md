@@ -17,7 +17,7 @@
 
 1. clone the repository:
 
-- git clone https://github.com/your-Patrickodida/Movie-Ranking-site.git
+- git clone https://github.com/Patrickodida/Movie-Ranking-site.git
 
 2. Open the `index.html` file in your browser.
 3. Explore the site.
