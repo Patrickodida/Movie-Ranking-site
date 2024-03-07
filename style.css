@@ -1,0 +1,337 @@
+:root {
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Poppins", sans-serif;
+
+    --fs-small: 1.3125rem;
+    --fs-medium: 2.25rem;
+    --fs-large: 3rem;
+    --fs-btn: 1.125em;
+    --fs-btn-nav: 1rem;
+    --fs-btn3: 1.125rem;
+
+    --fw-light: 400;
+    --fw-bold: 700;
+    --fw-bolder: 900;
+
+    --border-radius: 0.865em;
+    --border-radius-primary-btn: 6em;
+    --border-radius-secondary-btn: 5em;
+
+    --clr-primary-Dark: #333A73;
+    --clr-secondary-Light: #387ADF;
+    --clr-primary-btn: #50C4ED;
+    --clr-secondary-btn: #FBA834;
+    --clr-footer: #212846;
+    --clr-White: #FFFFFF;
+
+    --clr-sample1: #11161D;
+    --clr-sample2: #1A3755;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-small);
+    background-color: var(--clr-footer);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+h1 {
+    margin: 0.5em 0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#main__header {
+    background: var(--clr-sample2);
+    color: var(--clr-White);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+
+.header {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__text span {
+    color: var(--clr-secondary-btn);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__links {
+    display: flex;
+    margin-right: 2em;
+    width: 100%;
+}
+
+.nav__links li {
+    list-style: none;
+    padding: 0.25em 0.425em;
+}
+
+.nav__links li a {
+    color: var(--clr-White);
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.nav__links li a:hover {
+    color: var(--clr-secondary-Light);
+}
+
+.nav__links li a:active {
+    font-weight: var(--fw-bolder);
+}
+
+.btn {
+    font-size: var(--fs-btn-nav);
+    font-weight: var(--var(--fw-bolder));
+    border: none;
+    color: var(--clr-White);
+    background-color: var(--clr-secondary-Light);
+    padding: 0.625em 0.725em;
+    border-top-right-radius: var(--border-radius-primary-btn);
+    border-bottom-right-radius: var(--border-radius-primary-btn);
+    border-top-left-radius: 1em;
+    cursor: pointer;
+}
+
+.btn2 {
+    display: inline-block;
+    font-size: var(--fs-btn);
+    font-weight: var(--fw-bold);
+    padding: 0.625em 2.725em;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: var(--clr-White);
+    color: var(--clr-primary-btn);
+    border-radius: 6em;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.btn2:hover {
+    color: var(--clr-secondary-Light);
+}
+
+.center__btn {
+    text-align: center;
+}
+
+.hero__btn {
+    padding-top: 1.325em;
+}
+
+.btn3 {
+    font-size: var(--fs-btn3);
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0.625em 1.825em;
+    border-top-left-radius: 6em;
+    border-bottom-left-radius: 6em;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.btn3:hover {
+    color: var(--clr-secondary-Light);
+    background: none;
+}
+
+/* ==== HERO SECTION ==== */
+#hero {
+    padding: 8em 0 0;
+    margin-top: 3em;
+    margin-bottom: 6em;
+}
+
+.hero__cover {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    background: transparent;
+    color: var(--clr-White);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__text {
+    width: 40%;
+}
+
+.hero__text h2 {
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-bolder);
+}
+
+.hero__text p {
+    font-size: var(--fs-small);
+    font-weight: var(--fw-light);
+    line-height: 1.5em;
+}
+
+.hero__image {
+    width: 55%;
+    margin-left: 5%;
+}
+
+
+/* ==== MAIN SECTION ==== */
+.movies__cover {
+    padding: 3em 0;
+    background-color: transparent;
+    color: var(--clr-White);
+}
+
+.movie {
+    border-radius: var(--border-radius);
+    color: var(--clr-primary-Dark);
+    background: var(--clr-White);
+    box-sizing: 0px 10px 30px rgba(241, 243, 246, 0.3);
+}
+
+.desc {
+    text-align: center;
+    padding-bottom: 1.325em;
+}
+
+.desc h3 {
+    font-size: var(--fs-small);
+    margin-top: 0.725em;
+    margin-bottom: 0.325em;
+}
+
+.rating .fa-star {
+    font-size: 0.75em;
+    color: var(--clr-secondary-btn);
+    
+}
+
+
+/* === FEATURED NOVIE SECTION ====*/
+#feat__movies {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feat__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.325em;
+    margin-bottom: 2em;
+}
+
+
+/* === FAVOURITE MOVIE SECTION === */
+#fav__movies{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.fav__container {
+    display: flex;
+    justify-content: center;
+    gap: 1.325em;
+    margin: 2em 0;
+}
+
+.fav__movie {
+    width: calc(25% - 1.325em);
+
+    border-radius: var(--border-radius);
+    color: var(--clr-primary-Dark);
+    background: var(--clr-White);
+    box-sizing: 0px 10px 30px rgba(241, 243, 246, 0.3);
+}
+
+
+/* === FOOTER SECTION === */
+
+#footer {
+    padding: 1.25em;
+    font-family: var(--ff-secondary);
+    color: var(--clr-White);
+    background: var(--clr-sample2);
+    margin-top: 6em;
+    margin-bottom: 4em;
+}
+#footer__socials {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;  
+}
+
+.footer__container {
+    display: flex;
+    gap: 1.325em;
+    margin-top: 2em;
+}
+
+.footer__item {
+    width: calc(25% - 1.325em);
+}
+
+.footer__item h4 {
+    font-size: var(--fs-small);
+    font-weight: var(--fw-bold);
+}
+
+.footer__links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer__links li {
+    padding-bottom: 0.725em;
+}
+
+.footer__links li a {
+    font-size: 1.125rem;
+    font-weight: var(--fw-light);
+    text-decoration: none;
+    color: var(--clr-White);
+    cursor: pointer;
+    transform: .5s ease;
+}
+
+.footer__links li a:hover {
+    color: var(--clr-secondary-Light);
+} 
